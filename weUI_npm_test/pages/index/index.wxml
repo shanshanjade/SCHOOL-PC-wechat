@@ -1,0 +1,5 @@
+<form bindsubmit="submit">
+  <input type="text" name="wifi_ssid" value="HUAWEIMATE30" id="fsdf"/>
+  <input type="text" name="wifi_psw" value="13245678" id="fesfes"/>
+  <button type="primary" form-type="submit">submit</button>
+</form>

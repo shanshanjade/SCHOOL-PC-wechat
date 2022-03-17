@@ -1,0 +1,5 @@
+<view>
+  <image class="images" id="sea" src="/images/sea.gif" ></image>
+  <image class="images" id="" src="{{imgscr}}"></image>
+  <button bindtap="chooseImage" >选择图片</button>
+</view>

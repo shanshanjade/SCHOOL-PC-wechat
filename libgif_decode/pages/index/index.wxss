@@ -1,0 +1,7 @@
+
+.images {
+  width: 64px;
+  height: 16px;
+  border-radius: 1rpx;
+  margin-top: 5rpx;
+}

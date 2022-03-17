@@ -1,0 +1,63 @@
+/**index.wxss**/
+.container {
+  height: 1469rpx;
+}
+canvas{
+  border:1px solid #000;
+  width: 740rpx;
+  height:74rpx;
+  /* border-radius: 20rpx; */
+}
+.displayer {
+  margin-top: 30rpx;
+  border:1px solid #000;
+  width: 740rpx;
+  height:185rpx;
+  /* border-radius: 15rpx; */
+}
+.ma {
+  width: 700rpx;
+  height:70rpx;
+  background-image: linear-gradient(90deg,hsl(0, 100%, 50%),hsl(60, 100%, 50%),hsl(120, 100%, 50%),hsl(180, 100%, 50%),hsl(240, 100%, 50%),hsl(300, 100%, 50%),hsl(360, 100%, 50%));  border-radius: 50rpx;
+}
+.mv {
+  /* margin-top: 8rpx ; */
+  width: 50rpx;
+  height: 50rpx;
+  background-color: hsl(50, 100%, 50%);
+  border-radius: 50%;
+  animation : false;
+  border: 1px solid #FFF;
+}
+.slider-h {
+  width: 90%;
+  background-image: linear-gradient(90deg,hsl(0, 100%, 50%),hsl(60, 100%, 50%),hsl(120, 100%, 50%),hsl(180, 100%, 50%),hsl(240, 100%, 50%),hsl(300, 100%, 50%),hsl(360, 100%, 50%));
+  border-radius: 50rpx  ;
+  /* height: 80rpx; */
+}
+.slider-s {
+  width: 90%;
+  border-radius: 50rpx  ;
+  /* height: 80rpx; */
+}
+.sv {
+  margin-left: 10rpx;
+  font-size: 60rpx;
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  border: solid 3px lightgray;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 25%;
+}
+scroll-view {
+  white-space: nowrap;
+  position: relative;
+}
+.active {
+  border: solid 3px black;
+}
+button {
+  margin-top: 20rpx;
+}

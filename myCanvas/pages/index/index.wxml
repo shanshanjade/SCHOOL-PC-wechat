@@ -1,0 +1,40 @@
+<!--index.wxml-->
+
+<view class="container" style="background-color: {{color}}">
+	<canvas canvas-id="canvas" id="canvas" type="2d" bindtouchmove="bgc_change" bindtap="bgc_change"></canvas>
+	<canvas canvas-id="canvas1" id="canvas1" type="2d" bindtouchmove="bgc_change" bindtap="bgc_change"></canvas>
+	<slider 
+		class="slider-h"
+		block-color = 'hsl({{hue}}, 100%, 50%)' 
+		backgroundColor = 'transparent' 
+		activeColor = 'transparent' 
+		bindchanging = 'sliderEvent_h' 
+		bindchange = "sliderEvent_h"
+		min = "0"
+		max = "360"
+	></slider>
+	<slider
+		class="slider-s"
+		block-color = 'hsl({{hue}}, 100%, {{lightness}}%)' 
+		backgroundColor = 'transparent' 
+		activeColor = 'transparent' 
+		bindchanging = 'sliderEvent_s' 
+		bindchange = "sliderEvent_s"
+		style="background-image:  linear-gradient(90deg,black,hsl({{hue}},100% ,50%),hsl({{hue}},100% ,100%))"
+		min = "0"
+		max = "100"		
+	></slider>
+	<scroll-view scroll-x="true">
+		<view 
+			wx:for="{{colorArray}}" 
+			data-id="{{index}}"
+			class="sv {{currentItem==index?'active':''}}" 
+			style="background-color: hsl({{item.h}}, 100%, {{item.l}}%)"
+			bindtap="select"
+		><text decode="{{true}}">&nbsp;</text></view>
+		<view class="sv" bindtap="btnadd">+</view>
+		<view class="sv" bindtap="btnsub">-</view>
+	</scroll-view>
+	<button type="primary" size="mini" bindtap="btngra">生成渐变</button>
+	<canvas class="displayer" canvas-id="canvas2" id="canvas2" type="2d"></canvas>
+</view>
